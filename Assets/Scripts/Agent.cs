@@ -10,19 +10,13 @@ public class Agent : MonoBehaviour
     Vector3 steer= Vector3.zero;
 
     float maxSpeed=5;
-    float maxSteer=20;
+    float maxSteer=15;
 
     Transform target;
 
-    Vector3 ganar;
-    float radio;
    
-
-    void start()
-    {
-      radio = 3f;  
-    }
-
+   
+   
     void Update()
     {
         target = GameObject.Find("Target").transform;
@@ -42,12 +36,7 @@ public class Agent : MonoBehaviour
             Debug.Log("Perdiste");
         }
 
-      
 
-        if (0<radio)
-        {
-
-        }
 
     }
 }
